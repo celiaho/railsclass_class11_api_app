@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Links</h1>
+
+<% @links.each do |link| %>   <!-- already in controller -->
+    
+  <p>
+    <a href="<%= link["data"]["url"] %>">
+    <%= link["data"]["title"] %>
+    </a>
+  </p>
+
+<% end %>
+
